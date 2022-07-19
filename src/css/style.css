@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Play', sans-serif;
+}
+
+body {
+    background-color: #28242B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4em;
+}
+
+#calc {
+    width: 400px;
+    padding: 0.5em;
+    background-color: #F3F3FB;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+#calc h3 {
+    font-size: .8em;
+    font-weight: 300;
+    color: #203F60;
+}
+
+#operacoes {
+    text-align: right;
+}
+
+#ope-anterior,
+#ope-atual{
+    padding: 0.2em;
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+}
+
+#ope-anterior{
+    color: #777;    
+}
+
+#ope-atual{
+    font-size: 3em;
+    font-weight: 700;
+}
+
+#btn-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+
+#btn-container button{
+    border: 1px solid transparent;
+    border-radius: 4%;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: #6EB2CF;
+    cursor: pointer;
+}
+
+#btn-container .num {
+    background-color: #B5DDE6;
+}
+
+#btn-container button:hover{
+    background-color: #DEECF4;
+    border-color: #999;
+}
+
+#btn-container #btn-igual{
+    grid-column: span 2;
+    background-color: #3E81B9;
+}
+
+#btn-container #btn-igual:hover{
+    background-color: #3a91d8;
+}
+
+
+
